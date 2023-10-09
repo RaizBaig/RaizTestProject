@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/categoryFrag">
+
+    <fragment
+        android:id="@+id/categoryFrag"
+        android:name="com.example.myproject.ui.main.fragments.categoryfrag.CategoryFrag"
+        android:label="CategoryFragment" >
+        <action
+            android:id="@+id/action_categoryFragment_to_productsFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.myproject.ui.main.fragments.productfrag.ProductFrag"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_products">
+        <argument
+            android:name="categoryName"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="string"/>
+
+    </fragment>
+</navigation>

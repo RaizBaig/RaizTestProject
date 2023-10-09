@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment 1</string>
+    <string name="enter_city">Enter city name</string>
+    <string name="search">Search</string>
+    <string name="chicken_des">Chicken is a term which refers to a species of poultry. It is raised in many places for its meat and eggs</string>
+    <string name="mutton_des">While lamb and mutton meat both come from sheep, lamb is typically less than one year old, while mutton is typically three years old. Learn about common cuts and cooking methods for both types of meat.</string>
+
+    <string name="chicken_fry">Chicken , Oil, Salt, Turmeric powder , Red Chilly Powder</string>
+    <string name="chicken_65">Chicken , Oil, Salt, Turmeric powder , Red Chilly Powder , Corn flour, Soya sauce, Ginger, Garlic</string>
+    <string name="chicken_afghani">Chicken , Oil, Salt, Turmeric powder , Red Chilly Powder , sauce, Ginger, Garlic , Green Chilly , Badam and kaju Paste</string>
+
+    <string name="mutton_fry">Mutton , Oil, Salt, Turmeric powder , Red Chilly Powder</string>
+    <string name="mutton_curry">Mutton , Oil, Salt, Turmeric powder , Red Chilly Powder , Ginger garlic paste, Onions</string>
+    <string name="mutton_afghani">Mutton , Oil, Salt, Turmeric powder , Red Chilly Powder , Ginger garlic paste, Onions,Dry fruits paste</string>
+    <string name="ingredients">Ingredients:</string>
+
+
+</resources>
