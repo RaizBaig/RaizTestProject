@@ -20,17 +20,37 @@ class CategoryFrag : BaseFragment(R.layout.fragment_first) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentFirstBinding.bind(view)
         viewModel = CategoryFragVM()
-        setUi()
         setOnClickListeners()
         setObserver()
     }
 
     private fun setOnClickListeners() {
-        categoryAdapter.itemClickListener { item, _ ->
-            val bundle = Bundle()
-            val stringValue = item.strCategory
-            bundle.putString("category", stringValue)
-            findNavController().navigate(R.id.action_categoryFragment_to_productsFragment, bundle)
+        binding.also {
+            list.clear()
+            list.add(
+                CategoryModel(
+                    idCategory = "01",
+                    strCategory = "Chicken",
+                    strCategoryDescription = R.string.chicken_des
+                )
+            )
+            list.add(
+                CategoryModel(
+                    idCategory = "02",
+                    strCategory = "Mutton",
+                    strCategoryDescription = R.string.mutton_des
+                )
+            )
+            categoryAdapter = CategoryAdapter(list)
+            val categoryAdt = categoryAdapter
+            it.categoryRv.adapter = categoryAdapter
+
+            categoryAdt.itemClickListener { item, position ->
+                val bundle = Bundle()
+                val stringValue = item.strCategory
+                bundle.putString("category", stringValue)
+                findNavController().navigate(R.id.action_categoryFragment_to_productsFragment, bundle)
+            }
 
         }
     }
